@@ -16,10 +16,10 @@ int main() {
         system("cls");
 
         ofstream MyWriteFile;
-        MyWriteFile.open("names.txt", ios :: in | ios :: out | ios :: app);
+        MyWriteFile.open("file.txt", ios :: in | ios :: out | ios :: app);
         
         ifstream MyReadFile;
-        MyReadFile.open("names.txt", ios :: in);
+        MyReadFile.open("file.txt", ios :: in);
 
         cout<<"1. Read from file"<<endl;
         cout<<"2. Write into file"<<endl;
@@ -60,9 +60,9 @@ int main() {
 
             case 3:
                 MyWriteFile.close();
-                MyWriteFile.open("names.txt", ios :: out | ios :: trunc);
+                MyWriteFile.open("file.txt", ios :: out | ios :: trunc);
                 MyWriteFile.close();
-                MyWriteFile.open("names.txt", ios :: in | ios :: out | ios :: app);
+                MyWriteFile.open("file.txt", ios :: in | ios :: out | ios :: app);
                 c = 0;
 
                 cout<<"\nFile erased successfully!"<<endl;
