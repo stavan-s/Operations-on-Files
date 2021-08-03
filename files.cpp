@@ -36,7 +36,7 @@ int main() {
 
         cout<<"1. Read from file"<<endl;
         cout<<"2. Write into file"<<endl;
-        cout<<"3. Delete all the contents from the file"<<endl;
+        cout<<"3. Erase all data from the file"<<endl;
         cout<<"4. Check whether a name exists in the file"<<endl;
         cout<<"0. Exit"<<endl;
 
@@ -105,7 +105,7 @@ int main() {
                 for(char &c : surname_string) {
                     c = to_lowercase(c);
                 }
-                
+
 
                 while(getline(MyReadFile, inp_string)) {
                     if (inp_string.length() >= name_length + surname_length) {
